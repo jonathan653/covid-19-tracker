@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +9,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
-<body>
+<body class="bg-light">
 <div class="container">
-    <h1 class="text-center mt-5">COVID-19 Live Data</h1><br>
-    <h5 class="text-center">Data taken from Postman COVID-19 API Resource Center</h5><br>
+    <h1 class="text-center mt-5">COVID-19 global live data</h1><br>
+    <h5 class="text-center">Data taken from a COVID-19 API</h5><br>
 
-    <table class="table text-center">
+    <table class="table text-center bg-light">
         <thead>
         <tr>
             <th>New cases</th>
             <th>Total cases</th>
             <th>New deaths</th>
             <th>Total deaths</th>
-            <th>Total Recoveries</th>
+            <th>Total recoveries</th>
         </tr>
         </thead>
 
@@ -30,8 +30,9 @@
         </tbody>
     </table>
     <br>
-    <button type="button" onclick="refreshData()" class="btn btn-danger btn-block col-md-12">Refresh Data</button>
-
+    <div class="col-md-12 text-center">
+    <button type="button" onclick="refreshData()" class="btn btn-danger btn-block">Refresh Data</button>
+    </div>
 </div>
 </body>
 </html>

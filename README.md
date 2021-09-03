@@ -1,5 +1,3 @@
-# COVID-19 tracker 
-
 COVID-19 live data web app using JavaScript
 
 <h3>
