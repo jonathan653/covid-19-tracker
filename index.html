@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Live Tracker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center mt-5">COVID-19 Live Data</h1><br>
+    <h5 class="text-center">Data taken from Postman COVID-19 API Resource Center</h5><br>
+
+    <table class="table text-center">
+        <thead>
+        <tr>
+            <th>New cases</th>
+            <th>Total cases</th>
+            <th>New deaths</th>
+            <th>Total deaths</th>
+            <th>Total Recoveries</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr id="data"></tr>
+        </tbody>
+    </table>
+    <br>
+    <button type="button" onclick="refreshData()" class="btn btn-danger btn-block col-md-12">Refresh Data</button>
+
+</div>
+</body>
+</html>
